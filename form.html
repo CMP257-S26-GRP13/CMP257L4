@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <style>
+        table{
+            width: 100%;
+        }
+
+        .column1{
+            width: 40%;
+            text-align: left;
+            font-style: normal;
+        }
+        .column2{
+            width: 60%;
+            text-align: left;
+        }
+
+
+    </style>
+
+
+</head>
+
+<body>
+
+<h1>Submit Your Event</h1>
+<nav>
+<ul>
+    <li> <a href="index.html">Home</a> </li>
+    <li> <a href=""> Submit Event </a></li>
+
+</ul>
+</nav>
+
+
+<form action="dummy.html" method="post">
+
+    <table style="width: 100%;">
+        <tr>
+            <td class = "column1">Event Name: *</td>
+            <td class ="column2"> <input type="text" id="event_name" name="event_name" required></td>
+        </tr>
+        <tr>
+            <td class = "column1">Event Date: *</td>
+            <td class ="column2"> <input type="date" id="event_date" name="event_date" required></td>
+        </tr>
+        <tr>
+            <td class = "column1">Event Time:</td>
+            <td class = "column2"> <input type="time" id="event_time" name="event_time"></td>
+        </tr>
+        <tr>
+            <td class = "column1">Location</td>
+            <td class = "column2"> <input type="text" id="event_location" name="event_location" ></td>
+        </tr>
+        <tr>
+            <td class = "column1">Brief Description:</td>
+            <td class = "column2"> <textarea id="event_desc" name="event_desc"></textarea></td>
+        </tr>
+        <tr>
+            <td class = "column1">Organizer Name:</td>
+            <td class = "column2"> <input type="text" id="event_org_name" name="event_org_name"></td>
+        </tr>
+        <tr>
+            <td class = "column1">Organizer Email:</td>
+            <td class = "column2"> <input type="text" id="event_org_email" name="event_org_email" ></td>
+        </tr>
+        <tr>
+            <td class = "column1">Is this event open to all students?</td>
+            <td class = "column2"> 
+            <input type="radio" id="yes" value="yes" name="event_open">
+            <label>Yes</label>
+            <input type="radio" id="no" value="no" name="event_open">
+            <label>No</label>
+            
+            </td>
+        </tr>
+        <tr>
+            <td class = "column1">What type of event is this?</td>
+
+            <td class = "column2"> 
+            <input type="checkbox" value="workshop" name="event_type">
+            <label>Workshop</label>
+            <input type="checkbox" value="social" name="event_type">
+            <label>Social</label>
+            <input type="checkbox" value="sports" name="event_type">
+            <label>Sports</label>
+            <input type="checkbox" value="academic" name="event_type">
+            <label>Academic</label>
+            <input type="checkbox" value="other" name="event_type">
+            <label>Other</label>
+            </td>
+        </tr>
+        <tr>
+            <td class = "column1">Select the department hosting the event:</td>
+
+            <td class = "column2"> 
+                <select name ="department" id="department">
+                    <option value="CEN">CEN</option>
+                    <option value="SBA">SBA</option>
+                    <option value="CAS">CAS</option>
+                    <option value="CAAD">CAAD</option>
+                    <option value="OSA">OSA</option>
+                    <option value="other">Other</option>
+                </select>
+            </td>
+        </tr>
+        
+        <tr>
+            <td class = "column1"></td>
+
+            <td class = "column2"> 
+            <input type="submit" id="submit"name="submit">            
+            <input type="reset" id="reset"name="reset">
+
+            </td>
+        </tr>
+
+
+
+    </table>
+
+</form>
+
+
+   <footer>
+        <a style="font-size: 14px">© 2025 AUS Campus Connect</a> <br>
+
+    </footer>
+
+
+</body>
+</html>
