@@ -3,53 +3,54 @@
 <html>
 <head>
     <title> AUS Campus Connect </title>
-    <link rel="style" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
 
-<h1>Submit Your Event</h1>
-<nav>
-<ul>
-    <li> <a href="index.html">Home</a> </li>
-    <li> <a href="#"> Submit Event </a></li>
+    <header>
+        <h1 id="head"> Submit Your Event</h1>
+        <nav>
+            <a href="index.html" class="nav-links">Home</a>
+            <a href="form.html" class="nav-links"> Submit Event </a>
+            </ul>
+        </nav>
+    </header>
 
-</ul>
-</nav>
 
+<form action="dummy.html" method="post" >
 
-<form action="dummy.html" method="post">
-
-    <table>
-        <tr>
+    <div id="form-box">
+    <table id="form-table">
+        <tr class="row-content">
             <td class = "column1">Event Name: *</td>
             <td class ="column2"> <input type="text" id="event_name" name="event_name" required></td>
         </tr>
-        <tr>
+        <tr class="row-content">
             <td class = "column1">Event Date: *</td>
             <td class ="column2"> <input type="date" id="event_date" name="event_date" required></td>
         </tr>
-        <tr>
+        <tr class="row-content">
             <td class = "column1">Event Time:</td>
             <td class = "column2"> <input type="time" id="event_time" name="event_time"></td>
         </tr>
-        <tr>
+        <tr class="row-content">
             <td class = "column1">Location</td>
             <td class = "column2"> <input type="text" id="event_location" name="event_location" ></td>
         </tr>
-        <tr>
+        <tr class="row-content">
             <td class = "column1">Brief Description:</td>
             <td class = "column2"> <textarea id="event_desc" name="event_desc"></textarea></td>
         </tr>
-        <tr>
+        <tr class="row-content">
             <td class = "column1">Organizer Name:</td>
             <td class = "column2"> <input type="text" id="event_org_name" name="event_org_name"></td>
         </tr>
-        <tr>
+        <tr class="row-content">
             <td class = "column1">Organizer Email:</td>
             <td class = "column2"> <input type="text" id="event_org_email" name="event_org_email" ></td>
         </tr>
-        <tr>
+        <tr class="row-content">
             <td class = "column1">Is this event open to all students?</td>
             <td class = "column2"> 
             <input type="radio" id="yes" value="yes" name="event_open">
@@ -59,7 +60,7 @@
             
             </td>
         </tr>
-        <tr>
+        <tr class="row-content">
             <td class = "column1">What type of event is this?</td>
 
             <td class = "column2"> 
@@ -75,7 +76,7 @@
             <label>Other</label>
             </td>
         </tr>
-        <tr>
+        <tr class="row-content">
             <td class = "column1">Select the department hosting the event:</td>
 
             <td class = "column2"> 
@@ -90,7 +91,7 @@
             </td>
         </tr>
         
-        <tr>
+        <tr class="row-content">
             <td class = "column1"></td>
 
             <td class = "column2"> 
@@ -103,7 +104,7 @@
 
 
     </table>
-
+</div>
 </form>
 
 
