@@ -1,118 +1,224 @@
 <!DOCTYPE html>
 
 <html>
+
 <head>
+
     <title> AUS Campus Connect </title>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/styles.css">
+
+
+    <link rel="stylesheet" href="css/styles.css">
+
+
+
 </head>
 
 <body>
 
     <header>
-        <h1 id="head"> Submit Your Event</h1>
-        <nav>
-            <a href="index.html" class="nav-links">Home</a>
-            <a href="form.html" class="nav-links"> Submit Event </a>
-            </ul>
+
+        <nav class="navbar navbar-expand-lg fixed-top bg-primary " data-bs-theme="dark">
+        <a class="navbar-brand ms-2"" href="#">AUS Campus Connect</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse navbar-nav  justify-content-end"  id="navbarNav" >
+            <a href="index.html" class="nav-link active">Home</a>
+            <a href="form.html" class="nav-link"> Submit Event </a>
+        </div>
         </nav>
+
+
     </header>
 
 
-<form action="dummy.html" method="post" >
-
-    <div id="form-box">
-    <table id="form-table">
-        <tr class="row-content">
-            <td class = "column1">Event Name: *</td>
-            <td class ="column2"> <input type="text" id="event_name" name="event_name" required></td>
-        </tr>
-        <tr class="row-content">
-            <td class = "column1">Event Date: *</td>
-            <td class ="column2"> <input type="date" id="event_date" name="event_date" required></td>
-        </tr>
-        <tr class="row-content">
-            <td class = "column1">Event Time:</td>
-            <td class = "column2"> <input type="time" id="event_time" name="event_time"></td>
-        </tr>
-        <tr class="row-content">
-            <td class = "column1">Location</td>
-            <td class = "column2"> <input type="text" id="event_location" name="event_location" ></td>
-        </tr>
-        <tr class="row-content">
-            <td class = "column1">Brief Description:</td>
-            <td class = "column2"> <textarea id="event_desc" name="event_desc"></textarea></td>
-        </tr>
-        <tr class="row-content">
-            <td class = "column1">Organizer Name:</td>
-            <td class = "column2"> <input type="text" id="event_org_name" name="event_org_name"></td>
-        </tr>
-        <tr class="row-content">
-            <td class = "column1">Organizer Email:</td>
-            <td class = "column2"> <input type="text" id="event_org_email" name="event_org_email" ></td>
-        </tr>
-        <tr class="row-content">
-            <td class = "column1">Is this event open to all students?</td>
-            <td class = "column2"> 
-            <input type="radio" id="yes" value="yes" name="event_open">
-            <label>Yes</label>
-            <input type="radio" id="no" value="no" name="event_open">
-            <label>No</label>
-            
-            </td>
-        </tr>
-        <tr class="row-content">
-            <td class = "column1">What type of event is this?</td>
-
-            <td class = "column2"> 
-            <input type="checkbox" value="workshop" name="event_type">
-            <label>Workshop</label>
-            <input type="checkbox" value="social" name="event_type">
-            <label>Social</label>
-            <input type="checkbox" value="sports" name="event_type">
-            <label>Sports</label>
-            <input type="checkbox" value="academic" name="event_type">
-            <label>Academic</label>
-            <input type="checkbox" value="other" name="event_type">
-            <label>Other</label>
-            </td>
-        </tr>
-        <tr class="row-content">
-            <td class = "column1">Select the department hosting the event:</td>
-
-            <td class = "column2"> 
-                <select name ="department" id="department">
-                    <option value="CEN">CEN</option>
-                    <option value="SBA">SBA</option>
-                    <option value="CAS">CAS</option>
-                    <option value="CAAD">CAAD</option>
-                    <option value="OSA">OSA</option>
-                    <option value="other">Other</option>
-                </select>
-            </td>
-        </tr>
-        
-        <tr class="row-content">
-            <td class = "column1"></td>
-
-            <td class = "column2"> 
-            <input type="submit" id="submit"name="submit">            
-            <input type="reset" id="reset"name="reset">
-
-            </td>
-        </tr>
+    <form action="dummy.html" method="post">
 
 
+    <div class="row row-cols-6  border">
 
-    </table>
-</div>
-</form>
+            <div class="col">
+                Event Name: *
+            </div>
+
+            <div class="col">
+
+                <input type="text" id="event_name" name="event_name" required>
+                
+            </div>
+
+    </div>
+    </form>
 
 
-   <footer>
+    <form action="dummy.html" method="post">
+
+        <div id="form-box">
+
+            <table id="form-table">
+
+                <tr class="row-content">
+
+                    <td class="column1">Event Name: *</td>
+
+                    <td class="column2"> <input type="text" id="event_name" name="event_name" required></td>
+
+                </tr>
+
+                <tr class="row-content">
+
+                    <td class="column1">Event Date: *</td>
+
+                    <td class="column2"> <input type="date" id="event_date" name="event_date" required></td>
+
+                </tr>
+
+                <tr class="row-content">
+
+                    <td class="column1">Event Time:</td>
+
+                    <td class="column2"> <input type="time" id="event_time" name="event_time"></td>
+
+                </tr>
+
+                <tr class="row-content">
+
+                    <td class="column1">Location</td>
+
+                    <td class="column2"> <input type="text" id="event_location" name="event_location"></td>
+
+                </tr>
+
+                <tr class="row-content">
+
+                    <td class="column1">Brief Description:</td>
+
+                    <td class="column2"> <textarea id="event_desc" name="event_desc"></textarea></td>
+
+                </tr>
+
+                <tr class="row-content">
+
+                    <td class="column1">Organizer Name:</td>
+
+                    <td class="column2"> <input type="text" id="event_org_name" name="event_org_name"></td>
+
+                </tr>
+
+                <tr class="row-content">
+
+                    <td class="column1">Organizer Email:</td>
+
+                    <td class="column2"> <input type="text" id="event_org_email" name="event_org_email"></td>
+
+                </tr>
+
+                <tr class="row-content">
+
+                    <td class="column1">Is this event open to all students?</td>
+
+                    <td class="column2">
+
+                        <input type="radio" id="yes" value="yes" name="event_open">
+
+                        <label>Yes</label>
+
+                        <input type="radio" id="no" value="no" name="event_open">
+
+                        <label>No</label>
+
+                    </td>
+
+                </tr>
+
+                <tr class="row-content">
+
+                    <td class="column1">What type of event is this?</td>
+
+                    <td class="column2">
+
+                        <input type="checkbox" value="workshop" name="event_type">
+
+                        <label>Workshop</label>
+
+                        <input type="checkbox" value="social" name="event_type">
+
+                        <label>Social</label>
+
+                        <input type="checkbox" value="sports" name="event_type">
+
+                        <label>Sports</label>
+
+                        <input type="checkbox" value="academic" name="event_type">
+
+                        <label>Academic</label>
+
+                        <input type="checkbox" value="other" name="event_type">
+
+                        <label>Other</label>
+
+                    </td>
+
+                </tr>
+
+                <tr class="row-content">
+
+                    <td class="column1">Select the department hosting the
+                        event:</td>
+
+                    <td class="column2">
+
+                        <select name="department" id="department">
+
+                            <option value="CEN">CEN</option>
+
+                            <option value="SBA">SBA</option>
+
+                            <option value="CAS">CAS</option>
+
+                            <option value="CAAD">CAAD</option>
+
+                            <option value="OSA">OSA</option>
+
+                            <option value="other">Other</option>
+
+                        </select>
+
+                    </td>
+
+                </tr>
+
+                <tr class="row-content">
+
+                    <td class="column1"></td>
+
+                    <td class="column2">
+
+                        <input type="submit" id="submit" name="submit">
+
+                        <input type="reset" id="reset" name="reset">
+
+                    </td>
+
+                </tr>
+
+            </table>
+
+        </div>
+
+    </form>
+
+    <footer>
+
         <a style="font-size: 14px">© 2025 AUS Campus Connect</a> <br>
 
     </footer>
 
-
 </body>
+
 </html>
