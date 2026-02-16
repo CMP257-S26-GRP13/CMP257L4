@@ -1,0 +1,45 @@
+.navbar{
+    display: flex;
+    justify-content: space-between
+}
+
+.navbar h1{
+    font-weight: normal;
+    font-size: medium;
+}
+
+.carousel img{
+    height:350px;
+}
+
+footer{
+    background-color:rgb(13 110 253) ;
+    text-align: center;
+    color:white
+}
+
+footer a:link{
+    color: yellow;
+}
+footer a:visited{
+    color: yellow;
+}
+
+.navbar-collapse{
+    justify-content: right;
+}
+
+.event-type{
+    position: relative;
+    left:1rem;
+}
+
+.container{
+    border:groove;
+    padding:20px
+    
+}
+
+label{
+    font-weight: bold;
+}
